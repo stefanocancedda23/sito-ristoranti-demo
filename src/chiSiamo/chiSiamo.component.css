@@ -116,7 +116,33 @@
   top: auto;
   bottom: 10px;
 }
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 80px 10% 30px;
+}
 
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-container h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.link{
+  color: #fff;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .chi-hero h1 {
@@ -139,6 +165,23 @@
   }
   .chi-quote {
     font-size: 1.3rem;
+  }
+    /* FOOTER */
+  footer {
+    padding: 60px 5% 20px;
+  }
+  .footer-container {
+    gap: 25px;
+    text-align: center;
+  }
+  .footer-container h4 {
+    font-size: 1.1rem;
+  }
+  .footer-container p, .footer-container a {
+    font-size: 0.9rem;
+  }
+  .footer-bottom {
+    font-size: 0.7rem;
   }
 }
 
