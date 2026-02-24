@@ -1,0 +1,17 @@
+<nav class="navbar" #navbar>
+  <div class="navbar-content">
+    <div class="logo">Cancedda</div>
+
+    <div class="menu-icon" (click)="toggleMenu($event)">
+      <span [class.active]="menuOpen">&#9776;</span>
+    </div>
+
+    <ul class="nav-links" [class.open]="menuOpen">
+      <li><a href="">Home</a></li>
+      <li><a href="menu">Menu</a></li>
+      <li><a href="chisiamo">Chi Siamo</a></li>
+      <li><a href="orari">Orari</a></li>
+      <li><a (click)="openMaps()">Dove Siamo</a></li>
+    </ul>
+  </div>
+</nav>

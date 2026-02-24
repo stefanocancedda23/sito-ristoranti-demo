@@ -1,0 +1,120 @@
+/* HERO ORARI */
+.orari-hero {
+  padding: 100px 20px 60px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.orari-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.orari-hero p {
+  font-size: 1.3rem;
+  color: #f0e5d8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* SCHEDULE */
+.orari-schedule {
+  padding: 60px 20px;
+  background: #f7f7f7;
+}
+
+.schedule-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.schedule-day {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-day:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-day h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #c9a24d;
+}
+
+.schedule-day p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.schedule-day.closed {
+  color: #999;
+  font-style: italic;
+}
+
+/* NOTE */
+.schedule-note {
+  max-width: 700px;
+  margin: 40px auto 0;
+  background: #fff;
+  padding: 20px 25px;
+  border-left: 5px solid #c9a24d;
+  font-size: 1.05rem;
+  color: #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .orari-hero h1 {
+    font-size: 2.5rem;
+  }
+  .orari-hero p {
+    font-size: 1.1rem;
+  }
+  .schedule-day h3 {
+    font-size: 1.25rem;
+  }
+  .schedule-day p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .orari-hero h1 {
+    font-size: 2rem;
+  }
+  .orari-hero p {
+    font-size: 1rem;
+  }
+  .schedule-day {
+    padding: 20px 15px;
+  }
+  .schedule-day h3 {
+    font-size: 1.1rem;
+  }
+  .schedule-day p {
+    font-size: 0.9rem;
+  }
+  .schedule-note {
+    font-size: 0.95rem;
+  }
+}

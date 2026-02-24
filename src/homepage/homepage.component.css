@@ -1,0 +1,254 @@
+/* HERO */
+.hero {
+  height: 90vh;
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.45));
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+.btn.primary {
+  background: #c9a24d;
+  color: #000;
+  border: 1px solid #c9a24d;
+}
+.btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn.secondary:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+.btn.primary:hover {
+  background: #b18d3f;
+  border-color: #b18d3f;
+  transform: translateY(-2px);
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 38px;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  .btn.secondary{
+    background: #fff;
+    color: #000;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+}
+.overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.overlay button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  background: #c9a24d;
+  color: #000;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: #b18d3f;
+}
+
+/* ABOUT */
+.about {
+  padding: 120px 10%;
+  background: #fff;
+}
+
+.about-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.section-label {
+  color: #c9a24d;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.about p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* FEATURES */
+.features {
+  padding: 120px 10%;
+  background: #f5f5f5;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 50px 40px;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: none;
+  transition: 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #c9a24d;
+  margin: 0 auto 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 80px 10% 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-container h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.link{
+  color: #fff;
+}
+/* MOBILE RESPONSIVE ADDITIONS */
+@media (max-width: 768px) {
+  /* HERO */
+  .overlay h1 {
+    font-size: 3rem;
+  }
+  .overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  /* ABOUT */
+  .about {
+    padding: 80px 5%;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+
+  /* FEATURES */
+  .features {
+    padding: 80px 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .feature-card {
+    padding: 40px 20px;
+  }
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 60px 5% 20px;
+  }
+  .footer-container {
+    gap: 25px;
+    text-align: center;
+  }
+  .footer-container h4 {
+    font-size: 1.1rem;
+  }
+  .footer-container p, .footer-container a {
+    font-size: 0.9rem;
+  }
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
