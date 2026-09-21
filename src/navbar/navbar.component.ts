@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
     }
   }
   openMaps(){
-    const url = `https://www.google.com/maps/search/?api=1&query=via torino 26, Biella`;
+    const url = `https://www.google.com/maps/search/?api=1&query=via Via Martiri della libertà 314, Cossato`;
     window.open(url, '_blank');
   }
 
