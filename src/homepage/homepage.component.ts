@@ -12,7 +12,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
   }
   callNumber() {
-    const phone = 3714231978;
+    const phone = "015983068";
     window.location.href = `tel:${phone}`;
   }
 }
